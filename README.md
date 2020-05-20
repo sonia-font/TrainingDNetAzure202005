@@ -1,4 +1,22 @@
 # TrainingDNetAzure202005
-.Net Training Lesson 3
+.Net Training Lesson 4
 
-Write a program to calculate vehicle parking charges based on vehicle number of wheels. Please Implement OOPS concepts to achieve this (Interfaces, Abstract Classes, Polymorphism, classes for Car, Bike, Truck, etc) .
+Collections
+
+-Enhance functionalities of program developed in lesson 02 that implements a generic stack, add an iterator implementation following the example as shown in MS documentation page:
+
+-Defaul stack iterator, TopToBottom, BottomToTop, TopN(n)
+
+-Add menu options so print elements in the stack using implemented iterators
+
+
+
+Write a Program to manage a contact list including following functionalities
+
+-Add person including basic data: Name, Phone, Email
+
+-Search for a record given person Name
+
+-Delete a record given person Name
+
+-Show all records stored (iterate through the contact list)
