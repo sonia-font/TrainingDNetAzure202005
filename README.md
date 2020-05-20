@@ -20,3 +20,5 @@ Write a Program to manage a contact list including following functionalities
 -Delete a record given person Name
 
 -Show all records stored (iterate through the contact list)
+
+DUDA: No pude customizar el tamañño del array, se lo estaba pasando por constructor y me tiraba error asi que esta hardcodeado.
