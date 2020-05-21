@@ -9,14 +9,11 @@ namespace ContactList_App
 {
     class Program
     {
-        static IContactService _contactService;
+        static IContactService _contactService = new ContactService();
 
         static void Main(string[] args)
         {
-            int option;
-
-            ContactService contactService = new ContactService();
-            _contactService = contactService;
+            int option;            
 
             do
             {
