@@ -6,8 +6,8 @@ namespace Parking_App.Interfaces
 {
     public interface IParking
     {
-        public void FindVehicle();
-        public void ParkVehicle();
-        public double CalculateRate(int minutes);
+        void FindVehicle();
+        void ParkVehicle();
+        double CalculateRate(int minutes);
     }
 }
