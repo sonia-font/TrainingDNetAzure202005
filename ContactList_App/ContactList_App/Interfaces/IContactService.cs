@@ -7,10 +7,10 @@ namespace ContactList_App.Interfaces
 {
     public interface IContactService
     {
-        public void AddContact();
-        public void DeleteContact();
-        public void SearchRecord();
-        public void ShowRecords();
-        public void PrintRecord(Person person);
+        void AddContact();
+        void DeleteContact();
+        void SearchRecord();
+        void ShowRecords();
+        void PrintRecord(Person person);
     }
 }
