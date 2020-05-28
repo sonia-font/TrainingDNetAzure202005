@@ -1,5 +1,6 @@
 # TrainingDNetAzure202005
-.Net Training Lesson 06
+.Net Training Lesson 06 
+
 
 1. WalkThrough
 
