@@ -1,6 +1,6 @@
 # TrainingDNetAzure202005
-.Net Training - Lesson 12
+.Net Training - Lesson 13
 
-Add Unit Tests for Controller using Mocks and Moq package
+Document your API
 
-Generate Code Coverage Report using Coverlet
+Generate Swagger Documentation Page
