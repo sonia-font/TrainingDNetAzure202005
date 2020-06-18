@@ -1,12 +1,6 @@
 # TrainingDNetAzure202005
-.Net Training - Lesson 11
+.Net Training - Lesson 12
 
-Develop a custom Authorization Filter
+Add Unit Tests for Controller using Mocks and Moq package
 
-Develop a custom Action Filter
-
-Develop a custom Result Filter
-
-Create a demo API to handle JWT authentication 
-
-Check project structure with an authentication and authorization sample
+Generate Code Coverage Report using Coverlet
