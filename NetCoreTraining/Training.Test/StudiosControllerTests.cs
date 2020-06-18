@@ -1,17 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Moq;
+﻿using Moq;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Training.Application.Dto;
 using Training.Application.Services;
-using Training.Presentation.API.Controllers;
 using Xunit;
+using Training.Presentation.API.Controllers;
+using Microsoft.AspNetCore.Mvc;
+using Training.Application.Dto;
 
 namespace Training.Test
 {
-    public class StudiosControllerTest
+    public class StudiosControllerTests
     {
         #region GetAll_Tests
 
@@ -82,15 +82,15 @@ namespace Training.Test
             Guid id = Guid.Empty;
             var mockService = new Mock<IStudioService>();
             mockService.Setup(servicio => servicio.GetStudio(It.IsAny<Guid>())).ThrowsAsync(new ArgumentException("Error Retrieving Studio, Id can not be empty"));
-            var studiosController = new StudiosController(mockService.Object);
-            Exception ex = await Assert.ThrowsAsync<ArgumentException>(() => studiosController.Get(id));
+            var videosController = new StudiosController(mockService.Object);
+            Exception ex = await Assert.ThrowsAsync<ArgumentException>(() => videosController.Get(id));
             Assert.Equal("Error Retrieving Studio, Id can not be empty", ex.Message);
         }
 
         [Fact]
         public async Task GetStudio_WithNullId_ThrowsNullArgumentException()
         {
-            string errorMessage = "Error loading studio list, Id can not be null";
+            string errorMessage = "Error loading studios list, Id can not be null";
             var mockService = new Mock<IStudioService>();
             mockService.Setup(servicio => servicio.GetStudio(It.IsAny<Guid>())).ThrowsAsync(new ArgumentNullException(errorMessage, new InvalidOperationException()));
             var studiosController = new StudiosController(mockService.Object);
@@ -130,7 +130,7 @@ namespace Training.Test
         [Fact]
         public async Task Add_NullStudio_ThrowNullArgumentException()
         {
-            string errorMessage = "Error ocurred adding studio, the studio data cant be empty";
+            string errorMessage = "Error ocurred adding Studio, the video data cant be empty";
             var mockService = new Mock<IStudioService>();
             mockService.Setup(service => service.AddStudio(It.IsAny<StudioDto>())).Returns(Task.FromException(new ArgumentNullException(errorMessage, new InvalidOperationException())));
             var studioController = new StudiosController(mockService.Object);
@@ -153,7 +153,7 @@ namespace Training.Test
             var iActionResult = Assert.IsType<OkObjectResult>(result);
             Assert.True((bool)iActionResult.Value);
         }
-
+        
         [Fact]
         public async Task Remove_StudioWithEmptyId_ThrowArgumentException()
         {
@@ -191,5 +191,6 @@ namespace Training.Test
         }
 
         #endregion
+
     }
 }

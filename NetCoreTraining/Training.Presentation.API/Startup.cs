@@ -9,7 +9,11 @@ using Training.Application.Services;
 using Training.Data.Domain;
 using Training.Data.EF;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-
+using Training.Presentation.API.Filters;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System;
+using System.IO;
 
 namespace Training.Presentation.API
 {
@@ -29,6 +33,15 @@ namespace Training.Presentation.API
             RegisterRepositories(services);
             RegisterServices(services);
             services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = ".NET Academy", Version = "Lesson 13" });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +54,14 @@ namespace Training.Presentation.API
                 var context = serviceScope.ServiceProvider.GetRequiredService<UnitOfWork>();
                 context.Database.Migrate();
             }
+         
+            app.UseSwagger();
+            
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
             app.UseRouting();
             app.UseEndpoints(endpoints => endpoints.MapControllers());
         }
@@ -59,6 +80,8 @@ namespace Training.Presentation.API
 
         private void RegisterServices(IServiceCollection services)
         {
+            services.AddScoped<MyResultFilter>();
+            services.AddScoped<MyActionFilter>();
             services.AddScoped<IVideoService, VideoService>();
             services.AddScoped<IStudioService, StudioService>();
             services.AddScoped<ISessionService, SessionService>();

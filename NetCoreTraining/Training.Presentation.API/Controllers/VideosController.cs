@@ -6,6 +6,7 @@ using Training.Application.Services;
 
 namespace Training.Presentation.API.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class VideosController : ControllerBase
@@ -27,6 +28,9 @@ namespace Training.Presentation.API.Controllers
 
         #region Actions
 
+        /// <summary>
+        /// Retrieves all videos.
+        /// </summary>
         [HttpGet]
         [Route("")]
         public async Task<IActionResult> GetAll()
@@ -35,6 +39,9 @@ namespace Training.Presentation.API.Controllers
             return Ok(list);            
         }
 
+        /// <summary>
+        /// Retrieves a specific video.
+        /// </summary>
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> Get(Guid id)
@@ -43,6 +50,24 @@ namespace Training.Presentation.API.Controllers
             return Ok(video);
         }
 
+        /// <summary>
+        /// Adds a specific studio.
+        /// </summary>
+        /// /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///             "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        ///             "name": "string",
+        ///             "duration": 0,
+        ///             "directedBy": "string",
+        ///             "genre": "string",
+        ///             "studioId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+        ///     }
+        ///
+        /// </remarks>
+        /// <response code="200">Returns true</response>
+        /// <response code="400">Error</response> 
         [HttpPost]
         [Route("")]
         public async Task<IActionResult> Add([FromBody] VideoDto dto)
@@ -51,6 +76,9 @@ namespace Training.Presentation.API.Controllers
             return Ok(true);
         }
 
+        /// <summary>
+        /// Deletes a specific studio.
+        /// </summary>
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> Remove(Guid id)
