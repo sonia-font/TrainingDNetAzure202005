@@ -32,8 +32,7 @@ namespace Training.Presentation.API.Controllers
         public async Task<IActionResult> GetAll()
         {
             var list = await _videoService.GetVideos();
-
-            return Ok(list);
+            return Ok(list);            
         }
 
         [HttpGet]
@@ -41,7 +40,6 @@ namespace Training.Presentation.API.Controllers
         public async Task<IActionResult> Get(Guid id)
         {
             var video = await _videoService.GetVideo(id);
-
             return Ok(video);
         }
 
@@ -50,7 +48,6 @@ namespace Training.Presentation.API.Controllers
         public async Task<IActionResult> Add([FromBody] VideoDto dto)
         {
             await _videoService.AddVideo(dto);
-            
             return Ok(true);
         }
 
@@ -59,12 +56,9 @@ namespace Training.Presentation.API.Controllers
         public async Task<IActionResult> Remove(Guid id)
         {
             await _videoService.RemoveVideo(id);
-
-            return Ok(true);
+            return Ok(true);          
         }
 
         #endregion
-
-
     }
 }

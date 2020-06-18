@@ -9,7 +9,7 @@ using Training.Application.Services;
 using Training.Data.Domain;
 using Training.Data.EF;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Training.Presentation.API.Filters;
+
 
 namespace Training.Presentation.API
 {
@@ -62,8 +62,6 @@ namespace Training.Presentation.API
             services.AddScoped<IVideoService, VideoService>();
             services.AddScoped<IStudioService, StudioService>();
             services.AddScoped<ISessionService, SessionService>();
-            services.AddScoped<MyActionFilter>();
-            services.AddScoped<MyResultFilter>();
         }
     }
 }

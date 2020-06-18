@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Training.Presentation.API.Filters;
 
 namespace Training.Presentation.API.Controllers
 {
@@ -16,11 +15,9 @@ namespace Training.Presentation.API.Controllers
 
         public ValuesController(ILogger<ValuesController> logger) => this._logger = logger;
 
+
         // GET api/values
         [HttpGet]
-        [MyAuthorizationFilter]
-        [ServiceFilter(typeof(MyActionFilter))]
-        [ServiceFilter(typeof(MyResultFilter))]
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "value1", "value2" };
@@ -28,12 +25,9 @@ namespace Training.Presentation.API.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        [MyAuthorizationFilter]
-        [ServiceFilter(typeof(MyActionFilter))]
-        [ServiceFilter(typeof(MyResultFilter))]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return "value is " + id.ToString();
         }
 
         // POST api/values

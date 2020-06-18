@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="06/17/2020 19:42:37">
+  <assembly name="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" run-date="2020-06-17" run-time="19:42:37" total="26" passed="26" failed="0" skipped="0" time="0.353" errors="0">
+    <errors />
+    <collection total="11" passed="11" failed="0" skipped="0" name="Test collection for Training.Test.StudiosControllerTest" time="0.125">
+      <test name="Training.Test.StudiosControllerTest.Add_NullStudio_ThrowNullArgumentException" type="Training.Test.StudiosControllerTest" method="Add_NullStudio_ThrowNullArgumentException" time="0.1070966" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.GetStudio_WithNullId_ThrowsNullArgumentException" type="Training.Test.StudiosControllerTest" method="GetStudio_WithNullId_ThrowsNullArgumentException" time="0.0034032" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.GetAllStudios_Succesful" type="Training.Test.StudiosControllerTest" method="GetAllStudios_Succesful" time="0.0024420" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.Add_EmptyStudio_ThrowArgumentException" type="Training.Test.StudiosControllerTest" method="Add_EmptyStudio_ThrowArgumentException" time="0.0016668" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.GetStudio_WithEmptyId_ThrowsArgumentException" type="Training.Test.StudiosControllerTest" method="GetStudio_WithEmptyId_ThrowsArgumentException" time="0.0015966" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.GetAllStudios_ThrowException" type="Training.Test.StudiosControllerTest" method="GetAllStudios_ThrowException" time="0.0012263" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.Remove_Studio_Succesful" type="Training.Test.StudiosControllerTest" method="Remove_Studio_Succesful" time="0.0020228" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.Remove_StudioWithEmptyId_ThrowArgumentException" type="Training.Test.StudiosControllerTest" method="Remove_StudioWithEmptyId_ThrowArgumentException" time="0.0014480" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.GetStudio_ValidId_RetrievedStudioHasSameId" type="Training.Test.StudiosControllerTest" method="GetStudio_ValidId_RetrievedStudioHasSameId" time="0.0014430" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.Add_Studio_Succesful" type="Training.Test.StudiosControllerTest" method="Add_Studio_Succesful" time="0.0010148" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.StudiosControllerTest.GetStudio_ValidId_RetrievedObjectIsStudioDto" type="Training.Test.StudiosControllerTest" method="GetStudio_ValidId_RetrievedObjectIsStudioDto" time="0.0013833" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for Training.Test.ValuesControllerTests" time="0.101">
+      <test name="Training.Test.ValuesControllerTests.TestGet" type="Training.Test.ValuesControllerTests" method="TestGet" time="0.0995245" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.ValuesControllerTests.TestGetById(value: 1)" type="Training.Test.ValuesControllerTests" method="TestGetById" time="0.0016831" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.ValuesControllerTests.TestGetById(value: 2)" type="Training.Test.ValuesControllerTests" method="TestGetById" time="0.0000606" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.ValuesControllerTests.TestGetById(value: 3)" type="Training.Test.ValuesControllerTests" method="TestGetById" time="0.0000304" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="11" passed="11" failed="0" skipped="0" name="Test collection for Training.Test.VideosControllerTest" time="0.127">
+      <test name="Training.Test.VideosControllerTest.GetVideo_ValidId_RetrievedObjectIsVideoDto" type="Training.Test.VideosControllerTest" method="GetVideo_ValidId_RetrievedObjectIsVideoDto" time="0.1076749" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.Remove_Video_Succesful" type="Training.Test.VideosControllerTest" method="Remove_Video_Succesful" time="0.0027162" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.GetVideo_WithNullId_ThrowsNullArgumentException" type="Training.Test.VideosControllerTest" method="GetVideo_WithNullId_ThrowsNullArgumentException" time="0.0015171" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.GetVideo_ValidId_RetrievedVideoHasSameId" type="Training.Test.VideosControllerTest" method="GetVideo_ValidId_RetrievedVideoHasSameId" time="0.0037021" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.Remove_VideoWithEmptyId_ThrowArgumentException" type="Training.Test.VideosControllerTest" method="Remove_VideoWithEmptyId_ThrowArgumentException" time="0.0014210" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.Add_EmptyVideo_ThrowArgumentException" type="Training.Test.VideosControllerTest" method="Add_EmptyVideo_ThrowArgumentException" time="0.0024729" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.GetAllVideos_ThrowException" type="Training.Test.VideosControllerTest" method="GetAllVideos_ThrowException" time="0.0022190" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.Add_Video_Succesful" type="Training.Test.VideosControllerTest" method="Add_Video_Succesful" time="0.0010715" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.GetAllVideos_Succesful" type="Training.Test.VideosControllerTest" method="GetAllVideos_Succesful" time="0.0012908" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.Add_NullVideo_ThrowNullArgumentException" type="Training.Test.VideosControllerTest" method="Add_NullVideo_ThrowNullArgumentException" time="0.0015608" result="Pass">
+        <traits />
+      </test>
+      <test name="Training.Test.VideosControllerTest.GetVideo_WithEmptyId_ThrowsArgumentException" type="Training.Test.VideosControllerTest" method="GetVideo_WithEmptyId_ThrowsArgumentException" time="0.0014158" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

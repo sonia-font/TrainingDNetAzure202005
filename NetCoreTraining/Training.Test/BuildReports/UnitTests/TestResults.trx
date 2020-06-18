@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="68e3f3e8-6e58-42d9-aecf-ddb95e4073a5" name="Sonia@DESKTOP-743MSBU 2020-06-17 19:42:39" runUser="DESKTOP-743MSBU\Sonia" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2020-06-17T19:42:39.4915549-03:00" queuing="2020-06-17T19:42:39.4915566-03:00" start="2020-06-17T19:42:37.1977822-03:00" finish="2020-06-17T19:42:39.5743193-03:00" />
+  <TestSettings name="default" id="18c1b246-eeda-4f16-9580-e33f3907b817">
+    <Deployment runDeploymentRoot="Sonia_DESKTOP-743MSBU_2020-06-17_19_42_39" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="7c374d9e-1895-44bb-9208-45aa6cb1783e" testId="1870041d-b60d-b8e6-b9fd-b2d5fc427c51" testName="Training.Test.VideosControllerTest.Add_NullVideo_ThrowNullArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0015608" startTime="2020-06-17T19:42:39.4615095-03:00" endTime="2020-06-17T19:42:39.4615099-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c374d9e-1895-44bb-9208-45aa6cb1783e" />
+    <UnitTestResult executionId="e7a5bdc1-f572-440c-94e9-59930503f2ec" testId="43cfc9d7-80d8-3315-e7fc-6c0b49b36362" testName="Training.Test.ValuesControllerTests.TestGetById(value: 3)" computerName="DESKTOP-743MSBU" duration="00:00:00.0000304" startTime="2020-06-17T19:42:39.4465881-03:00" endTime="2020-06-17T19:42:39.4465886-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7a5bdc1-f572-440c-94e9-59930503f2ec" />
+    <UnitTestResult executionId="f332222d-6458-49c4-8a77-d76eb9883995" testId="3167b58a-dcb1-a977-41e8-006ded49dd4b" testName="Training.Test.VideosControllerTest.Remove_VideoWithEmptyId_ThrowArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0014210" startTime="2020-06-17T19:42:39.4574993-03:00" endTime="2020-06-17T19:42:39.4574997-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f332222d-6458-49c4-8a77-d76eb9883995" />
+    <UnitTestResult executionId="3187124b-7451-4191-bc3e-954ec6a553c2" testId="57e90789-f053-9464-86c8-ee5130ddf258" testName="Training.Test.StudiosControllerTest.Add_EmptyStudio_ThrowArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0016668" startTime="2020-06-17T19:42:39.4572650-03:00" endTime="2020-06-17T19:42:39.4572656-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3187124b-7451-4191-bc3e-954ec6a553c2" />
+    <UnitTestResult executionId="e17ab6a4-9480-4db5-bc66-e5a5cc986da9" testId="1704028f-83cc-7c0d-af3c-cae25bd31b1e" testName="Training.Test.VideosControllerTest.Add_EmptyVideo_ThrowArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0024729" startTime="2020-06-17T19:42:39.4577538-03:00" endTime="2020-06-17T19:42:39.4577544-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e17ab6a4-9480-4db5-bc66-e5a5cc986da9" />
+    <UnitTestResult executionId="7790df80-140d-4d45-8394-f800be83ef27" testId="db36b99b-e1f8-6f03-3b52-c7a4206256fb" testName="Training.Test.VideosControllerTest.Add_Video_Succesful" computerName="DESKTOP-743MSBU" duration="00:00:00.0010715" startTime="2020-06-17T19:42:39.4612469-03:00" endTime="2020-06-17T19:42:39.4612474-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7790df80-140d-4d45-8394-f800be83ef27" />
+    <UnitTestResult executionId="3eaab42c-c310-42b6-83f3-a10974a42244" testId="f4ed6317-c0f9-dd73-0e9b-fb31f20031a7" testName="Training.Test.VideosControllerTest.GetAllVideos_ThrowException" computerName="DESKTOP-743MSBU" duration="00:00:00.0022190" startTime="2020-06-17T19:42:39.4611109-03:00" endTime="2020-06-17T19:42:39.4611116-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3eaab42c-c310-42b6-83f3-a10974a42244" />
+    <UnitTestResult executionId="ceea1ede-1938-4f24-bb63-8263703da267" testId="eb79bc59-ac81-0a65-9b36-0770b5355571" testName="Training.Test.VideosControllerTest.GetVideo_WithEmptyId_ThrowsArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0014158" startTime="2020-06-17T19:42:39.4615779-03:00" endTime="2020-06-17T19:42:39.4615783-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ceea1ede-1938-4f24-bb63-8263703da267" />
+    <UnitTestResult executionId="7444acdd-3d6f-422c-9426-4952a99ba22b" testId="5756f3f4-d5cf-7a0b-4c00-48a0bb17854c" testName="Training.Test.StudiosControllerTest.Remove_Studio_Succesful" computerName="DESKTOP-743MSBU" duration="00:00:00.0020228" startTime="2020-06-17T19:42:39.4576503-03:00" endTime="2020-06-17T19:42:39.4576508-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7444acdd-3d6f-422c-9426-4952a99ba22b" />
+    <UnitTestResult executionId="4239702f-363d-4e79-bbfa-2a3241a01d43" testId="82b75dd3-50cf-7dca-031a-e1abcd5f3f80" testName="Training.Test.VideosControllerTest.GetVideo_ValidId_RetrievedVideoHasSameId" computerName="DESKTOP-743MSBU" duration="00:00:00.0037021" startTime="2020-06-17T19:42:39.4573449-03:00" endTime="2020-06-17T19:42:39.4573453-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4239702f-363d-4e79-bbfa-2a3241a01d43" />
+    <UnitTestResult executionId="6360234d-006e-4b6e-8e93-7532d6d164ab" testId="fa039071-a68f-cb3c-07be-d509a82c3c83" testName="Training.Test.ValuesControllerTests.TestGetById(value: 1)" computerName="DESKTOP-743MSBU" duration="00:00:00.0016831" startTime="2020-06-17T19:42:39.4460761-03:00" endTime="2020-06-17T19:42:39.4460774-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6360234d-006e-4b6e-8e93-7532d6d164ab" />
+    <UnitTestResult executionId="27d78a73-3ff8-41e2-beac-29636eb750f7" testId="8e0cc51d-e4a2-eae5-4c7d-c2673c724963" testName="Training.Test.StudiosControllerTest.Add_NullStudio_ThrowNullArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.1070966" startTime="2020-06-17T19:42:39.4461922-03:00" endTime="2020-06-17T19:42:39.4461925-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27d78a73-3ff8-41e2-beac-29636eb750f7" />
+    <UnitTestResult executionId="ede461ba-4b3a-4131-8b27-c509153ac871" testId="9b1494bc-3b6b-bc61-29d8-bca7a0fabe3b" testName="Training.Test.StudiosControllerTest.Remove_StudioWithEmptyId_ThrowArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0014480" startTime="2020-06-17T19:42:39.4609902-03:00" endTime="2020-06-17T19:42:39.4609917-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ede461ba-4b3a-4131-8b27-c509153ac871" />
+    <UnitTestResult executionId="01521acf-971d-4f0c-b0e4-4f25665d1e36" testId="a2023236-4fee-a229-cd71-d1ee272af4bf" testName="Training.Test.VideosControllerTest.Remove_Video_Succesful" computerName="DESKTOP-743MSBU" duration="00:00:00.0027162" startTime="2020-06-17T19:42:39.4466976-03:00" endTime="2020-06-17T19:42:39.4466978-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01521acf-971d-4f0c-b0e4-4f25665d1e36" />
+    <UnitTestResult executionId="af0b0065-8e46-4ecc-a9da-a45d0d823b62" testId="e4c4e528-46be-71ef-0c81-125d9ad7cb45" testName="Training.Test.VideosControllerTest.GetAllVideos_Succesful" computerName="DESKTOP-743MSBU" duration="00:00:00.0012908" startTime="2020-06-17T19:42:39.4613852-03:00" endTime="2020-06-17T19:42:39.4613856-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af0b0065-8e46-4ecc-a9da-a45d0d823b62" />
+    <UnitTestResult executionId="adfca5d4-fa69-4fa4-b7fd-a20a5927480f" testId="9d9d2ae0-2772-bd4c-acd7-5e2e5c4bd177" testName="Training.Test.StudiosControllerTest.Add_Studio_Succesful" computerName="DESKTOP-743MSBU" duration="00:00:00.0010148" startTime="2020-06-17T19:42:39.4613154-03:00" endTime="2020-06-17T19:42:39.4613158-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adfca5d4-fa69-4fa4-b7fd-a20a5927480f" />
+    <UnitTestResult executionId="e1940c9c-d378-47fd-8e39-045e44f2a196" testId="af42e1d7-33d2-3d61-10c3-77198f873cd0" testName="Training.Test.StudiosControllerTest.GetStudio_ValidId_RetrievedStudioHasSameId" computerName="DESKTOP-743MSBU" duration="00:00:00.0014430" startTime="2020-06-17T19:42:39.4611813-03:00" endTime="2020-06-17T19:42:39.4611817-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1940c9c-d378-47fd-8e39-045e44f2a196" />
+    <UnitTestResult executionId="a5cef074-ae4a-40b7-b412-1b828b264cfc" testId="f75a61ef-6235-28e9-9b0c-ff7f6465102f" testName="Training.Test.StudiosControllerTest.GetStudio_WithEmptyId_ThrowsArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0015966" startTime="2020-06-17T19:42:39.4574226-03:00" endTime="2020-06-17T19:42:39.4574233-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5cef074-ae4a-40b7-b412-1b828b264cfc" />
+    <UnitTestResult executionId="f450b3e4-114c-4794-8a1c-7967ed3dcfa8" testId="7f4faf1d-65cb-90d4-b092-5d952de8c11e" testName="Training.Test.StudiosControllerTest.GetAllStudios_ThrowException" computerName="DESKTOP-743MSBU" duration="00:00:00.0012263" startTime="2020-06-17T19:42:39.4575669-03:00" endTime="2020-06-17T19:42:39.4575672-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f450b3e4-114c-4794-8a1c-7967ed3dcfa8" />
+    <UnitTestResult executionId="e0a3fe69-c457-4191-b295-6ed7ddde5291" testId="1b529145-9ab9-784b-313a-98d34603e928" testName="Training.Test.StudiosControllerTest.GetAllStudios_Succesful" computerName="DESKTOP-743MSBU" duration="00:00:00.0024420" startTime="2020-06-17T19:42:39.4571374-03:00" endTime="2020-06-17T19:42:39.4571379-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0a3fe69-c457-4191-b295-6ed7ddde5291" />
+    <UnitTestResult executionId="bc7c792c-3496-47b4-bb2f-597452f81c01" testId="44ad7aac-4dbf-cb76-ab6d-5afea2ec98e4" testName="Training.Test.ValuesControllerTests.TestGetById(value: 2)" computerName="DESKTOP-743MSBU" duration="00:00:00.0000606" startTime="2020-06-17T19:42:39.4462803-03:00" endTime="2020-06-17T19:42:39.4462805-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc7c792c-3496-47b4-bb2f-597452f81c01" />
+    <UnitTestResult executionId="95e0257f-eab3-4eac-839a-30a396b075f2" testId="e5f69113-e4c2-3546-3de8-1378429fb6da" testName="Training.Test.StudiosControllerTest.GetStudio_ValidId_RetrievedObjectIsStudioDto" computerName="DESKTOP-743MSBU" duration="00:00:00.0013833" startTime="2020-06-17T19:42:39.4614534-03:00" endTime="2020-06-17T19:42:39.4614538-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95e0257f-eab3-4eac-839a-30a396b075f2" />
+    <UnitTestResult executionId="7f9a9113-a367-4748-b2b7-cc8139719073" testId="8aaa01d9-3c84-2527-669f-fdd0bbfbccb0" testName="Training.Test.StudiosControllerTest.GetStudio_WithNullId_ThrowsNullArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0034032" startTime="2020-06-17T19:42:39.4467887-03:00" endTime="2020-06-17T19:42:39.4467890-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f9a9113-a367-4748-b2b7-cc8139719073" />
+    <UnitTestResult executionId="a2bf3d38-5f95-4e39-bbdf-82cc3d31789d" testId="1d91f079-c8a5-0fc3-bff9-6494ff82d92c" testName="Training.Test.VideosControllerTest.GetVideo_WithNullId_ThrowsNullArgumentException" computerName="DESKTOP-743MSBU" duration="00:00:00.0015171" startTime="2020-06-17T19:42:39.4570156-03:00" endTime="2020-06-17T19:42:39.4570167-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2bf3d38-5f95-4e39-bbdf-82cc3d31789d" />
+    <UnitTestResult executionId="ff401a05-cfb9-48be-9694-f33b6d227c7a" testId="9f515472-713c-981b-65f2-84a5179c5e1d" testName="Training.Test.VideosControllerTest.GetVideo_ValidId_RetrievedObjectIsVideoDto" computerName="DESKTOP-743MSBU" duration="00:00:00.1076749" startTime="2020-06-17T19:42:39.4466292-03:00" endTime="2020-06-17T19:42:39.4466294-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff401a05-cfb9-48be-9694-f33b6d227c7a" />
+    <UnitTestResult executionId="3a3eba60-e112-4a57-bae3-d78443a202c3" testId="b1496592-d295-a643-f1d7-3d6d89cdbaac" testName="Training.Test.ValuesControllerTests.TestGet" computerName="DESKTOP-743MSBU" duration="00:00:00.0995245" startTime="2020-06-17T19:42:39.4388060-03:00" endTime="2020-06-17T19:42:39.4389227-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a3eba60-e112-4a57-bae3-d78443a202c3" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Training.Test.StudiosControllerTest.Remove_StudioWithEmptyId_ThrowArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="9b1494bc-3b6b-bc61-29d8-bca7a0fabe3b">
+      <Execution id="ede461ba-4b3a-4131-8b27-c509153ac871" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="Remove_StudioWithEmptyId_ThrowArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.GetAllStudios_ThrowException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="7f4faf1d-65cb-90d4-b092-5d952de8c11e">
+      <Execution id="f450b3e4-114c-4794-8a1c-7967ed3dcfa8" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="GetAllStudios_ThrowException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.Add_Studio_Succesful" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="9d9d2ae0-2772-bd4c-acd7-5e2e5c4bd177">
+      <Execution id="adfca5d4-fa69-4fa4-b7fd-a20a5927480f" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="Add_Studio_Succesful" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.GetVideo_WithEmptyId_ThrowsArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="eb79bc59-ac81-0a65-9b36-0770b5355571">
+      <Execution id="ceea1ede-1938-4f24-bb63-8263703da267" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="GetVideo_WithEmptyId_ThrowsArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.Add_Video_Succesful" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="db36b99b-e1f8-6f03-3b52-c7a4206256fb">
+      <Execution id="7790df80-140d-4d45-8394-f800be83ef27" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="Add_Video_Succesful" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.GetVideo_ValidId_RetrievedObjectIsVideoDto" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="9f515472-713c-981b-65f2-84a5179c5e1d">
+      <Execution id="ff401a05-cfb9-48be-9694-f33b6d227c7a" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="GetVideo_ValidId_RetrievedObjectIsVideoDto" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.Remove_VideoWithEmptyId_ThrowArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="3167b58a-dcb1-a977-41e8-006ded49dd4b">
+      <Execution id="f332222d-6458-49c4-8a77-d76eb9883995" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="Remove_VideoWithEmptyId_ThrowArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.Remove_Video_Succesful" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="a2023236-4fee-a229-cd71-d1ee272af4bf">
+      <Execution id="01521acf-971d-4f0c-b0e4-4f25665d1e36" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="Remove_Video_Succesful" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.GetStudio_WithEmptyId_ThrowsArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="f75a61ef-6235-28e9-9b0c-ff7f6465102f">
+      <Execution id="a5cef074-ae4a-40b7-b412-1b828b264cfc" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="GetStudio_WithEmptyId_ThrowsArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.ValuesControllerTests.TestGetById(value: 2)" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="44ad7aac-4dbf-cb76-ab6d-5afea2ec98e4">
+      <Execution id="bc7c792c-3496-47b4-bb2f-597452f81c01" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.ValuesControllerTests" name="TestGetById" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.Add_NullVideo_ThrowNullArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="1870041d-b60d-b8e6-b9fd-b2d5fc427c51">
+      <Execution id="7c374d9e-1895-44bb-9208-45aa6cb1783e" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="Add_NullVideo_ThrowNullArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.ValuesControllerTests.TestGetById(value: 1)" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="fa039071-a68f-cb3c-07be-d509a82c3c83">
+      <Execution id="6360234d-006e-4b6e-8e93-7532d6d164ab" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.ValuesControllerTests" name="TestGetById" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.GetStudio_ValidId_RetrievedStudioHasSameId" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="af42e1d7-33d2-3d61-10c3-77198f873cd0">
+      <Execution id="e1940c9c-d378-47fd-8e39-045e44f2a196" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="GetStudio_ValidId_RetrievedStudioHasSameId" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.GetAllVideos_ThrowException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="f4ed6317-c0f9-dd73-0e9b-fb31f20031a7">
+      <Execution id="3eaab42c-c310-42b6-83f3-a10974a42244" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="GetAllVideos_ThrowException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.Add_NullStudio_ThrowNullArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="8e0cc51d-e4a2-eae5-4c7d-c2673c724963">
+      <Execution id="27d78a73-3ff8-41e2-beac-29636eb750f7" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="Add_NullStudio_ThrowNullArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.Remove_Studio_Succesful" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="5756f3f4-d5cf-7a0b-4c00-48a0bb17854c">
+      <Execution id="7444acdd-3d6f-422c-9426-4952a99ba22b" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="Remove_Studio_Succesful" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.Add_EmptyVideo_ThrowArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="1704028f-83cc-7c0d-af3c-cae25bd31b1e">
+      <Execution id="e17ab6a4-9480-4db5-bc66-e5a5cc986da9" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="Add_EmptyVideo_ThrowArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.GetVideo_WithNullId_ThrowsNullArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="1d91f079-c8a5-0fc3-bff9-6494ff82d92c">
+      <Execution id="a2bf3d38-5f95-4e39-bbdf-82cc3d31789d" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="GetVideo_WithNullId_ThrowsNullArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.ValuesControllerTests.TestGet" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="b1496592-d295-a643-f1d7-3d6d89cdbaac">
+      <Execution id="3a3eba60-e112-4a57-bae3-d78443a202c3" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.ValuesControllerTests" name="TestGet" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.GetAllVideos_Succesful" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="e4c4e528-46be-71ef-0c81-125d9ad7cb45">
+      <Execution id="af0b0065-8e46-4ecc-a9da-a45d0d823b62" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="GetAllVideos_Succesful" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.GetAllStudios_Succesful" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="1b529145-9ab9-784b-313a-98d34603e928">
+      <Execution id="e0a3fe69-c457-4191-b295-6ed7ddde5291" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="GetAllStudios_Succesful" />
+    </UnitTest>
+    <UnitTest name="Training.Test.VideosControllerTest.GetVideo_ValidId_RetrievedVideoHasSameId" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="82b75dd3-50cf-7dca-031a-e1abcd5f3f80">
+      <Execution id="4239702f-363d-4e79-bbfa-2a3241a01d43" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.VideosControllerTest" name="GetVideo_ValidId_RetrievedVideoHasSameId" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.GetStudio_ValidId_RetrievedObjectIsStudioDto" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="e5f69113-e4c2-3546-3de8-1378429fb6da">
+      <Execution id="95e0257f-eab3-4eac-839a-30a396b075f2" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="GetStudio_ValidId_RetrievedObjectIsStudioDto" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.GetStudio_WithNullId_ThrowsNullArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="8aaa01d9-3c84-2527-669f-fdd0bbfbccb0">
+      <Execution id="7f9a9113-a367-4748-b2b7-cc8139719073" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="GetStudio_WithNullId_ThrowsNullArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.StudiosControllerTest.Add_EmptyStudio_ThrowArgumentException" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="57e90789-f053-9464-86c8-ee5130ddf258">
+      <Execution id="3187124b-7451-4191-bc3e-954ec6a553c2" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.StudiosControllerTest" name="Add_EmptyStudio_ThrowArgumentException" />
+    </UnitTest>
+    <UnitTest name="Training.Test.ValuesControllerTests.TestGetById(value: 3)" storage="d:\git\lesson12\netcoretraining\training.test\bin\debug\netcoreapp3.1\training.test.dll" id="43cfc9d7-80d8-3315-e7fc-6c0b49b36362">
+      <Execution id="e7a5bdc1-f572-440c-94e9-59930503f2ec" />
+      <TestMethod codeBase="D:\GIT\lesson12\NetCoreTraining\Training.Test\bin\Debug\netcoreapp3.1\Training.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Training.Test.ValuesControllerTests" name="TestGetById" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1870041d-b60d-b8e6-b9fd-b2d5fc427c51" executionId="7c374d9e-1895-44bb-9208-45aa6cb1783e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43cfc9d7-80d8-3315-e7fc-6c0b49b36362" executionId="e7a5bdc1-f572-440c-94e9-59930503f2ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3167b58a-dcb1-a977-41e8-006ded49dd4b" executionId="f332222d-6458-49c4-8a77-d76eb9883995" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57e90789-f053-9464-86c8-ee5130ddf258" executionId="3187124b-7451-4191-bc3e-954ec6a553c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1704028f-83cc-7c0d-af3c-cae25bd31b1e" executionId="e17ab6a4-9480-4db5-bc66-e5a5cc986da9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db36b99b-e1f8-6f03-3b52-c7a4206256fb" executionId="7790df80-140d-4d45-8394-f800be83ef27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4ed6317-c0f9-dd73-0e9b-fb31f20031a7" executionId="3eaab42c-c310-42b6-83f3-a10974a42244" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb79bc59-ac81-0a65-9b36-0770b5355571" executionId="ceea1ede-1938-4f24-bb63-8263703da267" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5756f3f4-d5cf-7a0b-4c00-48a0bb17854c" executionId="7444acdd-3d6f-422c-9426-4952a99ba22b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82b75dd3-50cf-7dca-031a-e1abcd5f3f80" executionId="4239702f-363d-4e79-bbfa-2a3241a01d43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fa039071-a68f-cb3c-07be-d509a82c3c83" executionId="6360234d-006e-4b6e-8e93-7532d6d164ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e0cc51d-e4a2-eae5-4c7d-c2673c724963" executionId="27d78a73-3ff8-41e2-beac-29636eb750f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b1494bc-3b6b-bc61-29d8-bca7a0fabe3b" executionId="ede461ba-4b3a-4131-8b27-c509153ac871" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2023236-4fee-a229-cd71-d1ee272af4bf" executionId="01521acf-971d-4f0c-b0e4-4f25665d1e36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4c4e528-46be-71ef-0c81-125d9ad7cb45" executionId="af0b0065-8e46-4ecc-a9da-a45d0d823b62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d9d2ae0-2772-bd4c-acd7-5e2e5c4bd177" executionId="adfca5d4-fa69-4fa4-b7fd-a20a5927480f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af42e1d7-33d2-3d61-10c3-77198f873cd0" executionId="e1940c9c-d378-47fd-8e39-045e44f2a196" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f75a61ef-6235-28e9-9b0c-ff7f6465102f" executionId="a5cef074-ae4a-40b7-b412-1b828b264cfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f4faf1d-65cb-90d4-b092-5d952de8c11e" executionId="f450b3e4-114c-4794-8a1c-7967ed3dcfa8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b529145-9ab9-784b-313a-98d34603e928" executionId="e0a3fe69-c457-4191-b295-6ed7ddde5291" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44ad7aac-4dbf-cb76-ab6d-5afea2ec98e4" executionId="bc7c792c-3496-47b4-bb2f-597452f81c01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5f69113-e4c2-3546-3de8-1378429fb6da" executionId="95e0257f-eab3-4eac-839a-30a396b075f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8aaa01d9-3c84-2527-669f-fdd0bbfbccb0" executionId="7f9a9113-a367-4748-b2b7-cc8139719073" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d91f079-c8a5-0fc3-bff9-6494ff82d92c" executionId="a2bf3d38-5f95-4e39-bbdf-82cc3d31789d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f515472-713c-981b-65f2-84a5179c5e1d" executionId="ff401a05-cfb9-48be-9694-f33b6d227c7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b1496592-d295-a643-f1d7-3d6d89cdbaac" executionId="3a3eba60-e112-4a57-bae3-d78443a202c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="26" executed="26" passed="26" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 3.1.2)&#xD;
+[xUnit.net 00:00:01.28]   Discovering: Training.Test&#xD;
+[xUnit.net 00:00:01.34]   Discovered:  Training.Test&#xD;
+[xUnit.net 00:00:01.34]   Starting:    Training.Test&#xD;
+[xUnit.net 00:00:01.55]   Finished:    Training.Test&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
