@@ -1,0 +1,71 @@
+# Define the services that make up your app
+
+version: '3.1'
+
+services:
+  sql:
+    image: "mcr.microsoft.com/mssql/server"
+    volumes:
+      - D:\GIT\Academy\lesson13\NetCoreTraining\data:/var/opt/mssql/data 
+    environment:
+      SA_PASSWORD: "Sonia1234"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+      MSSQL_AGENT_ENABLED: "true"
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'Sonia1234' -Q 'SELECT Name from sys.Databases'
+    ports: 
+      - "1433:1433"
+    container_name: sql
+    networks:
+     - elastic
+     
+  elasticsearch:
+   container_name: elasticsearch1
+   image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
+   ports:
+    - 9200:9200
+   volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data
+   environment:
+    - xpack.monitoring.enabled=true
+    - xpack.watcher.enabled=false
+    - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    - discovery.type=single-node
+   networks:
+    - elastic
+    
+  kibana:
+   container_name: kibana1
+   image: docker.elastic.co/kibana/kibana:7.6.2
+   ports:
+    - 5601:5601
+   depends_on:
+    - elasticsearch
+   environment:
+    - ELASTICSEARCH_URL=http://localhost:9200
+   networks:
+    - elastic
+    
+  app:
+    build: 
+     context: .
+     dockerfile: D:\GIT\Academy\lesson13\NetCoreTraining\DockerFile    
+    image: netcoretraining
+    ports:
+      - "8080:80"      
+    depends_on: 
+      - sql
+      - elasticsearch
+      - kibana
+    tty: true
+    container_name: app
+    networks:
+     - elastic    
+  
+networks:
+  elastic:
+    driver: bridge
+
+volumes:
+  elasticsearch-data:
