@@ -67,15 +67,9 @@ namespace Training.Presentation.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Add([FromBody] StudioDto dto)
         {
-            if (dto != null)
-            {
-                await _studioService.AddStudio(dto);
-                return Ok(true);
-            }
-            else
-                return BadRequest();
+            await _studioService.AddStudio(dto);
 
-            
+            return Ok(true);
         }
 
         [HttpDelete]
