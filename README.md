@@ -1,7 +1,16 @@
 # TrainingDNetAzure202005
-.Net Training - Lesson 16
+.Net Training - Lesson 17
 
-Azure Blñob Storage
+Configure a build pipeline for a net core application
 
-BlogStorageSample: https://www.youtube.com/watch?v=9ZpMpf9dNDA&t=999s
-Azure: https://netacademy.blob.core.windows.net/blobcontainer/hola.txt
+Build Steps
+
+Run Tests
+
+Code Coverage
+
+Artifacts Publishing
+
+Configure a release pipeline for a net core application
+
+Configure a Blue-Green Deployment Strategy
