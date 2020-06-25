@@ -68,3 +68,11 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'Java2NetSwagger'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Evaluación gratuita(da4d8da5-9d0a-4065-9e9e-5b0ae1f67876)'
+    appType: 'webApp'
+    WebAppName: 'NetAcademy'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
