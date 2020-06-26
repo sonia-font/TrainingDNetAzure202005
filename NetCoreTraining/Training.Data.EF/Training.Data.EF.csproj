@@ -37,6 +37,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="3.1.5" />
   </ItemGroup>
 
 </Project>

@@ -8,6 +8,7 @@ using Xunit;
 using Training.Presentation.API.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Training.Application.Dto;
+using Microsoft.Extensions.Logging;
 
 namespace Training.Test
 {
@@ -22,9 +23,10 @@ namespace Training.Test
         [Fact]
         public async Task GetAllVideos_Succesful()
         {
-            var mockService = new Mock<IVideoService>();
+            var mockService = new Mock<IVideoService>();            
             mockService.Setup(servicio => servicio.GetVideos()).ReturnsAsync(GetTestListVideoDto());
-            var videosController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videosController = new VideosController(mockService.Object, logger.Object);
             var result = await videosController.GetAll();
             var okResult = Assert.IsType<OkObjectResult>(result);
             Assert.True(okResult.Value != null);
@@ -39,7 +41,8 @@ namespace Training.Test
         {
             var mockService = new Mock<IVideoService>();
             mockService.Setup(servicio => servicio.GetVideos()).ThrowsAsync(new Exception("Error Loading Videos List"));
-            var videosController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videosController = new VideosController(mockService.Object, logger.Object);
             Exception ex = await Assert.ThrowsAsync<Exception>(() => videosController.GetAll());
             Assert.Equal("Error Loading Videos List", ex.Message);
         }
@@ -57,7 +60,8 @@ namespace Training.Test
             Guid id = new Guid();
             var mockService = new Mock<IVideoService>();
             mockService.Setup(servicio => servicio.GetVideo(It.IsAny<Guid>())).ReturnsAsync(GetTestVideoDto(id));
-            var videosController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videosController = new VideosController(mockService.Object, logger.Object);
             var result = await videosController.Get(id);
             var okResult = Assert.IsType<OkObjectResult>(result);
             Assert.IsAssignableFrom<VideoDto>(okResult.Value);
@@ -69,7 +73,8 @@ namespace Training.Test
             Guid testId = new Guid();
             var mockService = new Mock<IVideoService>();
             mockService.Setup(servicio => servicio.GetVideo(It.IsAny<Guid>())).ReturnsAsync(GetTestVideoDto(testId));
-            var videosController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videosController = new VideosController(mockService.Object, logger.Object);
             var result = await videosController.Get(testId);
             var okResult = Assert.IsType<OkObjectResult>(result);
             VideoDto video = (VideoDto)okResult.Value;
@@ -82,7 +87,8 @@ namespace Training.Test
             Guid id = Guid.Empty;
             var mockService = new Mock<IVideoService>();
             mockService.Setup(servicio => servicio.GetVideo(It.IsAny<Guid>())).ThrowsAsync(new ArgumentException("Error Retrieving Video, Id can not be empty"));
-            var videosController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videosController = new VideosController(mockService.Object, logger.Object);
             Exception ex = await Assert.ThrowsAsync<ArgumentException>(() => videosController.Get(id));
             Assert.Equal("Error Retrieving Video, Id can not be empty", ex.Message);
         }
@@ -93,7 +99,8 @@ namespace Training.Test
             string errorMessage = "Error loading videos list, Id can not be null";
             var mockService = new Mock<IVideoService>();
             mockService.Setup(servicio => servicio.GetVideo(It.IsAny<Guid>())).ThrowsAsync(new ArgumentNullException(errorMessage, new InvalidOperationException()));
-            var videosController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videosController = new VideosController(mockService.Object, logger.Object);
             Exception ex = await Assert.ThrowsAsync<ArgumentNullException>(() => videosController.Get(new Guid()));
             Assert.Equal(errorMessage, ex.Message);
         }
@@ -108,7 +115,8 @@ namespace Training.Test
         {
             var mockService = new Mock<IVideoService>();
             mockService.Setup(service => service.AddVideo(It.IsAny<VideoDto>())).Returns(Task.CompletedTask).Verifiable();
-            var videoController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
             VideoDto dummy = new VideoDto();
             var result = await videoController.Add(dummy);
             var iActionResult = Assert.IsType<OkObjectResult>(result);
@@ -121,7 +129,8 @@ namespace Training.Test
             string errorMessage = "Error ocurred adding video, the video data cant be empty";
             var mockService = new Mock<IVideoService>();
             mockService.Setup(service => service.AddVideo(It.IsAny<VideoDto>())).Returns(Task.FromException(new ArgumentException(errorMessage)));
-            var videoController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
             VideoDto dummy = new VideoDto();
             Exception exception = await Assert.ThrowsAsync<ArgumentException>(() => videoController.Add(dummy));
             Assert.Equal(errorMessage, exception.Message);
@@ -133,7 +142,8 @@ namespace Training.Test
             string errorMessage = "Error ocurred adding video, the video data cant be empty";
             var mockService = new Mock<IVideoService>();
             mockService.Setup(service => service.AddVideo(It.IsAny<VideoDto>())).Returns(Task.FromException(new ArgumentNullException(errorMessage, new InvalidOperationException())));
-            var videoController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
             Exception exception = await Assert.ThrowsAsync<ArgumentNullException>(() => videoController.Add(null));
             Assert.Equal(exception.Message, errorMessage);
         }
@@ -148,7 +158,8 @@ namespace Training.Test
             VideoDto dummy = new VideoDto();
             var mockService = new Mock<IVideoService>();
             mockService.Setup(service => service.RemoveVideo(It.IsAny<Guid>())).Returns(Task.CompletedTask).Verifiable();
-            var videoController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
             var result = await videoController.Remove(dummy.Id);
             var iActionResult = Assert.IsType<OkObjectResult>(result);
             Assert.True((bool)iActionResult.Value);
@@ -160,7 +171,8 @@ namespace Training.Test
             string errorMessage = "Error Ocurred removing video, The Id of the video can not be empty.";
             var mockService = new Mock<IVideoService>();
             mockService.Setup(service => service.RemoveVideo(It.IsAny<Guid>())).Returns(Task.FromException(new ArgumentException(errorMessage)));
-            var videoController = new VideosController(mockService.Object);
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
             VideoDto dummy = new VideoDto();
             var exception = await Assert.ThrowsAsync<ArgumentException>(() => videoController.Remove(dummy.Id));
             Assert.Equal(errorMessage, exception.Message);

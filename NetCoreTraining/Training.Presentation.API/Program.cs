@@ -1,19 +1,15 @@
 ﻿using System;
-using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Serilog;
-using Serilog.Formatting;
-using Serilog.Formatting.Compact;
-using Serilog.Formatting.Json;
-using Serilog.Formatting.Display;
 using Microsoft.Extensions.Configuration;
 using Serilog.Sinks.Elasticsearch;
 using System.Reflection;
+using Microsoft.Extensions.Logging;
 
 namespace Training.Presentation.API
 {
-    public class Program
+	public class Program
     {
 		public static void Main(string[] args)
 		{
@@ -41,7 +37,11 @@ namespace Training.Presentation.API
 						$"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
 						optional: true);
 				})
-				.UseSerilog();
+				.ConfigureLogging(logging =>
+				logging.AddAzureWebAppDiagnostics()
+				.AddConsole()
+				.AddSerilog()
+				);
 
 		}
 
