@@ -10,7 +10,6 @@ Connect API Backend to an Azure SQL Instance
 Enable Logging
 
 
-Reads back from:
-Dev ( https://netacademy.azurewebsites.net/index.html )
+Back ( https://netacademyqa.azurewebsites.net/index.html )
 
 Front ( https://aztrainingaccountsf.z15.web.core.windows.net )
