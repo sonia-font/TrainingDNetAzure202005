@@ -1,27 +1,16 @@
 # TrainingDNetAzure202005
-.Net Training - Lesson 17
+.Net Training - Lesson 18
 
-*Configure a build pipeline for a net core application
+Use Visual Studio Code to Deploy a Static Web Site
 
-  -Build Steps
+Enable Cors to Call Core Backend Api from a Front End Site
 
-  -Run Tests
+Connect API Backend to an Azure SQL Instance
 
-  -Code Coverage
+Enable Logging
 
-  -Artifacts Publishing
 
-*Configure a release pipeline for a net core application
-
-*Configure a Blue-Green Deployment Strategy
-
-Environments deployed:
+Reads back from:
 Dev ( https://netacademy.azurewebsites.net/index.html )
 
-QA ( https://netacademyqa.azurewebsites.net/index.html )
-
-Blue-Green (SWAP Envs)
-
-STG ( https://netacademyprodu-netacademystage.azurewebsites.net/index.html )
-
-PROD  ( https://netacademyprodu.azurewebsites.net/index.html )
+Front ( https://aztrainingaccountsf.z15.web.core.windows.net )
