@@ -32,7 +32,9 @@ namespace Training.Presentation.API
             InitDbContext(services);
             RegisterRepositories(services);
             RegisterServices(services);
-            services.AddControllers();
+            ConfigureCors(services);
+            services.AddControllers()
+            .AddNewtonsoftJson();
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API VideoApp", Version = "v1" });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -56,14 +58,30 @@ namespace Training.Presentation.API
                 c.RoutePrefix = string.Empty;
             });
             app.UseRouting();
+            app.UseCors();
             app.UseEndpoints(endpoints => endpoints.MapControllers());
+        }
+
+        private void ConfigureCors(IServiceCollection services)
+        {
+            services.AddCors(
+                options =>
+                    options.AddPolicy(name: "MyPolicy",
+                        builder =>
+                        {
+                            builder.WithOrigins(Configuration.GetValue<string>("frontEndUrl")).AllowAnyHeader().AllowAnyMethod();
+                        }
+                    )
+                );
         }
 
         private void InitDbContext(IServiceCollection services)
         {
-            services.AddDbContext<UnitOfWork>(opts => 
-                opts.UseInMemoryDatabase("NetCoreTraining")
-                );
+            services.AddDbContext<UnitOfWork>(opts =>
+               opts.UseSqlServer(Configuration["ConnectionString:NetCoreTrainingDB"]));
+
+            //services.AddDbContext<UnitOfWork>(opts =>
+            //    opts.UseInMemoryDatabase("NetCoreTraining"));
         }
 
         private void RegisterRepositories(IServiceCollection services)

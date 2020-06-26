@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Training.Application.Dto;
 using Training.Application.Services;
@@ -27,6 +28,7 @@ namespace Training.Presentation.API.Controllers
 
         #region Actions
 
+        [EnableCors("MyPolicy")]
         [HttpGet]
         [Route("")]
         public async Task<IActionResult> GetAll()
@@ -35,6 +37,7 @@ namespace Training.Presentation.API.Controllers
             return Ok(list);            
         }
 
+        [EnableCors("MyPolicy")]
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> Get(Guid id)
@@ -43,6 +46,7 @@ namespace Training.Presentation.API.Controllers
             return Ok(video);
         }
 
+        [EnableCors("MyPolicy")]
         [HttpPost]
         [Route("")]
         public async Task<IActionResult> Add([FromBody] VideoDto dto)
@@ -51,6 +55,7 @@ namespace Training.Presentation.API.Controllers
             return Ok(true);
         }
 
+        [EnableCors("MyPolicy")]
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> Remove(Guid id)
