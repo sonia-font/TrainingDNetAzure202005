@@ -8,6 +8,7 @@ namespace Training.Application.Services
     public interface IVideoService
     {
         Task AddVideo(VideoDto dto);
+        Task UpdateVideo(VideoDto dto);
         Task RemoveVideo(Guid id);
         Task<IEnumerable<VideoDto>> GetVideos();
         Task<VideoDto> GetVideo(Guid id);

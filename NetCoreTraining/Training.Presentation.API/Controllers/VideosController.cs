@@ -37,8 +37,8 @@ namespace Training.Presentation.API.Controllers
         [Route("")]
         public async Task<IActionResult> GetAll()
         {
-            _logger.LogInformation("VideosController GetAll java2NetSwagger");
-            Trace.WriteLine("Trace VideosController GetAll java2NetSwagger");
+            _logger.LogInformation("----------VideosController GetAll----------");
+            Trace.WriteLine("---------Trace VideosController GetAll----------");
             var list = await _videoService.GetVideos();
             return Ok(list);            
         }
@@ -57,8 +57,18 @@ namespace Training.Presentation.API.Controllers
         [Route("")]
         public async Task<IActionResult> Add([FromBody] VideoDto dto)
         {
-            _logger.LogInformation("VideosCongroller Add java2NetSwagger");
+            _logger.LogInformation("--------VideosCongroller Add---------");
             await _videoService.AddVideo(dto);
+            return Ok(true);
+        }
+
+        [EnableCors("MyPolicy")]
+        [HttpPut]
+        [Route("")]
+        public async Task<IActionResult> Update([FromBody] VideoDto dto)
+        {
+            _logger.LogInformation("--------VideosCongroller Update---------");
+            await _videoService.UpdateVideo(dto);
             return Ok(true);
         }
 
@@ -67,6 +77,7 @@ namespace Training.Presentation.API.Controllers
         [Route("{id}")]
         public async Task<IActionResult> Remove(Guid id)
         {
+            _logger.LogInformation("--------VideosCongroller Delete---------");
             await _videoService.RemoveVideo(id);
             return Ok(true);          
         }

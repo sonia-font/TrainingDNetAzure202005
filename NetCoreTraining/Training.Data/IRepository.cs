@@ -10,6 +10,10 @@ namespace Training.Data
 
         Task AddAsync(TEntity item);
 
+        void Update(TEntity item);
+
+        Task UpdateAsync(TEntity item);
+
         void Remove(TEntity item);
 
         Task RemoveAsync(TEntity item);

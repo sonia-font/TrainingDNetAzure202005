@@ -47,6 +47,18 @@ namespace Training.Data.EF
             _unitOfWork.CommitChanges();
         }
 
+        public void Update(TEntity item)
+        {
+            GetSet().Update(item);
+            _unitOfWork.CommitChanges();
+        }
+
+        public async Task UpdateAsync(TEntity item)
+        {
+            await Task.Run(() => GetSet().Update(item));
+            _unitOfWork.CommitChanges();
+        }
+
         public TEntity Get(TEntityId id)
         {
             return !id.Equals(default(TEntityId)) ? GetSet().Find(id) : null;

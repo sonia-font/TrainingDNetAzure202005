@@ -150,6 +150,48 @@ namespace Training.Test
 
         #endregion
 
+        #region Update_Tests
+
+        [Fact]
+        public async Task Update_Video_Succesful()
+        {
+            var mockService = new Mock<IVideoService>();
+            mockService.Setup(service => service.UpdateVideo(It.IsAny<VideoDto>())).Returns(Task.CompletedTask).Verifiable();
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
+            VideoDto dummy = new VideoDto();
+            var result = await videoController.Update(dummy);
+            var iActionResult = Assert.IsType<OkObjectResult>(result);
+            Assert.True((bool)iActionResult.Value);
+        }
+
+        [Fact]
+        public async Task Update_EmptyVideo_ThrowArgumentException()
+        {
+            string errorMessage = "Error ocurred adding video, the video data cant be empty";
+            var mockService = new Mock<IVideoService>();
+            mockService.Setup(service => service.UpdateVideo(It.IsAny<VideoDto>())).Returns(Task.FromException(new ArgumentException(errorMessage)));
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
+            VideoDto dummy = new VideoDto();
+            Exception exception = await Assert.ThrowsAsync<ArgumentException>(() => videoController.Update(dummy));
+            Assert.Equal(errorMessage, exception.Message);
+        }
+
+        [Fact]
+        public async Task Update_NullVideo_ThrowNullArgumentException()
+        {
+            string errorMessage = "Error ocurred adding video, the video data cant be empty";
+            var mockService = new Mock<IVideoService>();
+            mockService.Setup(service => service.UpdateVideo(It.IsAny<VideoDto>())).Returns(Task.FromException(new ArgumentNullException(errorMessage, new InvalidOperationException())));
+            var logger = new Moq.Mock<ILogger<VideosController>>();
+            var videoController = new VideosController(mockService.Object, logger.Object);
+            Exception exception = await Assert.ThrowsAsync<ArgumentNullException>(() => videoController.Update(null));
+            Assert.Equal(exception.Message, errorMessage);
+        }
+
+        #endregion
+
         #region Remove_Tests
 
         [Fact]

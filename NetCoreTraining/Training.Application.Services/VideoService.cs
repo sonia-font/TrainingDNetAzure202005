@@ -43,6 +43,23 @@ namespace Training.Application.Services
             await _videoRepository.AddAsync(videoEntity);
         }
 
+        public async Task UpdateVideo(VideoDto dto)
+        {
+            var videoEntity = new Video
+            {
+                Id = dto.Id,
+                Name = dto.Name,
+                DirectedBy = dto.DirectedBy,
+                Duration = dto.Duration,
+                Genre = dto.Genre,
+                CreationDate = DateTime.UtcNow,
+                ModifiedDate = DateTime.UtcNow,
+                StudioId = dto.StudioId
+            };
+
+            await _videoRepository.UpdateAsync(videoEntity);
+        }
+
         public async Task<VideoDto> GetVideo(Guid id)
         {
             var video = await _videoRepository.GetAsync(id);
